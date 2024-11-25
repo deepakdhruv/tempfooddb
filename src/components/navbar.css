@@ -1,0 +1,100 @@
+/* Navbar Container */
+.navbar {
+    background: linear-gradient(135deg, #792c5a, #005f73); /* Gradient background */
+    border-bottom: 3px solid #94d2bd; /* Accent line at the bottom */
+    border-bottom-left-radius: 20px; /* Rounded bottom corners */
+    border-bottom-right-radius: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Elevated shadow */
+    padding: 1rem 1.5rem;
+    transition: transform 0.3s ease-in-out; /* Smooth hover effect */
+    
+  }
+  
+  .navbar:hover {
+    transform: translateY(0px); /* Lifts the navbar slightly on hover */
+  }
+  
+  /* Navbar Brand */
+  .navbar-brand {
+    font-family: 'Pacifico', cursive; /* Unique, playful font */
+    color: #f0fdfa !important; /* Soft white text */
+    font-size: 2rem; /* Slightly larger for prominence */
+    letter-spacing: 3px;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .navbar-brand:hover {
+    color: #e59797 !important; /* Light teal hover effect */
+    text-shadow: 0px 0px 5px rgba(148, 210, 189, 0.7); /* Glow effect */
+  }
+  
+  /* Navbar Links */
+  .nav-item .nav-link {
+    color: #f0fdfa !important; /* Light color for better contrast */
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: color 0.3s, text-shadow 0.3s;
+  }
+  
+  .nav-item .nav-link:hover {
+    color: #e9d8a6 !important; /* Warm, golden hover effect */
+    text-shadow: 0px 2px 5px rgba(233, 216, 166, 0.5); /* Glow effect */
+  }
+  
+  /* Active Link Styling */
+  .nav-item .nav-link.active {
+    color: #94d2bd !important; /* Teal for active link */
+    border-bottom: 2px solid #94d2bd; /* Underline the active link */
+  }
+  
+  /* Buttons */
+  .btn {
+    font-weight: 600;
+    padding: 0.5rem 1.2rem;
+    border-radius: 50px; /* Fully rounded buttons */
+    transition: background-color 0.3s, color 0.3s, transform 0.2s;
+  }
+  
+  .btn.bg-white.text-success {
+    border: 2px solid #0a9396; /* Teal border */
+    color: #0a9396 !important;
+  }
+  
+  .btn.bg-white.text-success:hover {
+    background-color: #0a9396;
+    color: #4eca0c !important;
+    transform: scale(1.05); /* Slight enlargement on hover */
+  }
+  
+  .btn.bg-white.text-danger {
+    border: 2px solid #e63946; /* Red border */
+    color: #ed5f6b !important;
+  }
+  
+  .btn.bg-white.text-danger:hover {
+    background-color: #e63946;
+    color: #ff1c1c !important;
+    transform: scale(1.05); /* Slight enlargement on hover */
+  }
+  
+  /* Toggler */
+  .navbar-toggler {
+    border: none; /* Clean design */
+    outline: none; /* No focus outline */
+  }
+  
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ffffff' viewBox='0 0 16 16'%3E%3Cpath d='M2 4h12v1H2zm0 3h12v1H2zm0 3h12v1H2z'/%3E%3C/svg%3E");
+  }
+  
+  /* Responsiveness */
+  @media (max-width: 768px) {
+    .navbar {
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+  
+    .navbar-nav {
+      text-align: center; /* Center align links on smaller devices */
+    }
+  }
